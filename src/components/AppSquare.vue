@@ -11,22 +11,22 @@
 </template>
 
 <script>
-import Button from "./Button";
+// import Button from './Button'
 export default {
-	name: "AppSquare",
-	props: {
-		app: Object
+	name: 'AppSquare',
+    	components: {
+		// Button
 	},
-	components: {
-		Button
+	props: {
+		app: Object,
 	},
 	methods: {
 		goTo() {
 			// console.log(this.app.link)
-			window.open(this.app.link, "_blank");
-		}
-	}
-};
+			window.open(this.app.link, '_blank')
+		},
+	},
+}
 </script>
 
 <style scoped>
