@@ -14,11 +14,14 @@
 // import Button from './Button'
 export default {
 	name: 'AppSquare',
-    	components: {
-		// Button
+    components: {
+	    // Button
 	},
 	props: {
-		app: Object,
+		app: {
+            type: Object,
+            default: '',
+        }
 	},
 	methods: {
 		goTo() {
