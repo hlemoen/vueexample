@@ -13,20 +13,20 @@
 <script>
 // import Button from './Button'
 export default {
-	name: "AppSquare",
-    components: {
+	name: 'AppSquare',
+    	components: {
 		// Button
 	},
 	props: {
-		app: Object
+		app: Object,
 	},
 	methods: {
 		goTo() {
 			// console.log(this.app.link)
-			window.open(this.app.link, "_blank");
-		}
-	}
-};
+			window.open(this.app.link, '_blank')
+		},
+	},
+}
 </script>
 
 <style scoped>
