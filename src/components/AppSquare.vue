@@ -5,7 +5,7 @@
 			<p>{{ app.description }}</p>
 		</div>
 		<div>
-			<!-- <Button :href="app.link"  text="App" color="#2E74C8" /> -->
+			<!-- <Button :href="app.link" text="App" color="#2E74C8" /> -->
 		</div>
 	</div>
 </template>
@@ -14,14 +14,14 @@
 // import Button from './Button'
 export default {
 	name: 'AppSquare',
-    components: {
-	    // Button
+	components: {
+		// Button
 	},
 	props: {
 		app: {
-            type: Object,
-            default: '',
-        }
+			type: Object,
+			default: '',
+		},
 	},
 	methods: {
 		goTo() {
