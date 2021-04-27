@@ -14,7 +14,7 @@
 // import Button from './Button'
 export default {
 	name: "AppSquare",
-	components: {
+    components: {
 		// Button
 	},
 	props: {
