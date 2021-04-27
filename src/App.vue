@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import Header from "./components/Header";
-import Apps from "./components/Apps";
-import Footer from "./components/Footer";
+import Header from './components/Header'
+import Apps from './components/Apps'
+import Footer from './components/Footer'
 export default {
-	name: "App",
+	name: 'App',
 	components: {
 		Header,
 		Apps,
@@ -23,46 +23,46 @@ export default {
 		this.apps = [
 			{
 				id: 1,
-				title: "Inviter",
-				description: "Inviter til møter eller lignende",
+				title: 'Inviter',
+				description: 'Inviter til møter eller lignende',
 				link:
-					"https://calinvdev.digitalrevisor.eu/makeEvent/createNewEvent",
+					'https://calinvdev.digitalrevisor.eu/makeEvent/createNewEvent',
 			},
 			{
 				id: 2,
-				title: "Repiterende Epost",
-				description: "Send repiterende E-poster",
+				title: 'Repiterende Epost',
+				description: 'Send repiterende E-poster',
 				link:
-					"https://calinvdev.digitalrevisor.eu/makeEvent/emailRepeatCreator",
+					'https://calinvdev.digitalrevisor.eu/makeEvent/emailRepeatCreator',
 			},
 			{
 				id: 3,
-				title: "Repiterende Sms",
-				description: "Send repiterende Sms'er",
+				title: 'Repiterende Sms',
+				description: 'Send repiterende Sms\'er',
 				link:
-					"https://calinvdev.digitalrevisor.eu/makeEvent/smsRepeatCreator",
+					'https://calinvdev.digitalrevisor.eu/makeEvent/smsRepeatCreator',
 			},
 			{
 				id: 4,
-				title: "Test",
-				description: "Ser om ruter virker",
-				link: "https://nrk.no",
+				title: 'Test',
+				description: 'Ser om ruter virker',
+				link: 'https://nrk.no',
 			},
 			{
 				id: 5,
-				title: "Test Nummer 2",
-				description: "Ser om ruter virker",
-				link: "https://vg.no",
+				title: 'Test Nummer 2',
+				description: 'Ser om ruter virker',
+				link: 'https://vg.no',
 			},
 			{
 				id: 6,
-				title: "Test Nummer 3",
-				description: "Dette er en test",
-				link: "https://reddit.com",
+				title: 'Test Nummer 3',
+				description: 'Dette er en test',
+				link: 'https://reddit.com',
 			},
-		];
+		]
 	},
-};
+}
 </script>
 
 <style>
