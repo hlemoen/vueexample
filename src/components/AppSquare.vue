@@ -20,7 +20,7 @@ export default {
 	props: {
 		app: {
 			type: Object,
-			default: () => 1,
+			// default: () => 1,
 		},
 	},
 	methods: {
