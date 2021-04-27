@@ -74,6 +74,7 @@ export default {
 	color: #2c3e50;
 	margin-top: 60px;
 }
+
 .container {
 	width: 50%;
 	padding-right: 15px;
@@ -81,6 +82,7 @@ export default {
 	margin-right: auto;
 	margin-left: auto;
 }
+
 .card {
 	position: relative;
 	display: flex;
@@ -92,6 +94,7 @@ export default {
 	border: 10px solid #2e74c8;
 	border-radius: 0.25rem;
 }
+
 .card-header {
 	padding: 0.75rem 1.25rem;
 	margin-bottom: 0;
@@ -99,6 +102,7 @@ export default {
 	background-color: #2e74c8;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+
 .card-body {
 	justify-content: center;
 	flex: auto;
@@ -107,6 +111,7 @@ export default {
 	border-color: #2e74c8;
 	/* padding: 1.25rem; */
 }
+
 .card-footer {
 	padding: 0.75rem 1.25rem;
 	color: whitesmoke;
