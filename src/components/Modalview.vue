@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Header from './components/Header'
-import Apps from './components/Apps'
-import Footer from './components/Footer'
+import Header from './Header'
+import Apps from './Apps'
+import Footer from './Footer'
 import Modal from '@nextcloud/vue/dist/Components/Modal'
 export default {
 	name: 'Modalview',
