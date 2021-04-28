@@ -2,15 +2,10 @@
 	<li>
 		<div class="user-status-menu-item">
 			<!-- Status modal toggle -->
-			<toggle :is="inline ? 'button' : 'a'"
-				:class="{'user-status-menu-item__toggle--inline': inline}"
-				class="user-status-menu-item__toggle"
-				href="#"
-				@click.prevent.stop="openModal">
-				<span class="user-status-menu-item__toggle-icon">
-					Vueexample
-				</span>
-			</toggle>
+			<a class="user-status-menu-item__toggle" href="#" @click.prevent.stop="openModal"></a>
+			<span :class="statusIcon" class="user-status-menu-item__toggle-icon">
+				Vueexample
+			</span>
 		</div>
 
 		<!-- Status management modal -->
@@ -57,14 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
-}
+$max-width-user-status: 200px;
 
 .container {
 	width: 50%;
