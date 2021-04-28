@@ -14,7 +14,7 @@
 		</div>
 
 		<!-- Status management modal -->
-		<SetStatusModal
+		<Modalview
 			v-if="isModalOpen"
 			@close="closeModal" />
 	</li>
@@ -38,21 +38,7 @@ export default {
 			isModalOpen: false,
 		}
 	},
-	methods: {
-		/**
-		 * Opens the modal to set a custom status
-		 */
-		openModal() {
-			this.isModalOpen = true
-		},
-		/**
-		 * Closes the modal
-		 */
-		closeModal() {
-			this.isModalOpen = false
-		},
-	},
-	created() {
+		created() {
 		this.apps = [
 			{
 				id: 1,
@@ -94,6 +80,20 @@ export default {
 				link: 'https://reddit.com',
 			},
 		]
+	},
+	methods: {
+		/**
+		 * Opens the modal to set a custom status
+		 */
+		openModal() {
+			this.isModalOpen = true
+		},
+		/**
+		 * Closes the modal
+		 */
+		closeModal() {
+			this.isModalOpen = false
+		},
 	},
 }
 </script>
