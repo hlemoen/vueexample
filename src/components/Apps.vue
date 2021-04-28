@@ -1,20 +1,20 @@
 <template>
 	<div class="card-body">
-		<div :key="app.id" v-for="app in apps">
+		<div v-for="app in apps" :key="app.id">
 			<AppSquare :app="app" />
 		</div>
 	</div>
 </template>
 
 <script>
-import AppSquare from "./AppSquare.vue";
+import AppSquare from './AppSquare.vue'
 export default {
-	name: "Apps",
+	name: 'Apps',
 	props: {
-		apps: Array
+		apps: Array,
 	},
 	components: {
-		AppSquare
-	}
-};
+		AppSquare,
+	},
+}
 </script>
