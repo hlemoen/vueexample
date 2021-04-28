@@ -10,7 +10,7 @@
 import AppSquare from './AppSquare.vue'
 export default {
 	name: 'Apps',
-		components: {
+	components: {
 		AppSquare,
 	},
 	props: {

@@ -6,12 +6,9 @@
 
 <script>
 export default {
-	name: "Header",
+	name: 'Header',
 	props: {
 		title: String
 	},
-	components: {}
-};
+}
 </script>
-
-<style scoped></style>

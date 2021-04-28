@@ -10,6 +10,5 @@ export default {
 	props: {
 		footer: String,
 	},
-};
+}
 </script>
-
