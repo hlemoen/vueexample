@@ -8,7 +8,7 @@
 				href="#"
 				@click.prevent.stop="openModal">
 				<span class="user-status-menu-item__toggle-icon">
-				Vueexample
+					Vueexample
 				</span>
 			</toggle>
 		</div>
@@ -24,6 +24,7 @@
 
 export default {
 	name: 'App',
+
 	components: {
 		Modalview: () => import(/* webpackChunkName: 'user-status-modal' */'./components/Modalview'),
 	},
