@@ -12,7 +12,7 @@
 <script>
 export default {
 	name: "Button",
-	props: {
+  props: {
 		text: String,
 		color: String
 	}
@@ -45,6 +45,7 @@ export default {
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .btn-primary {
 	color: #fff;
 	background-color: #3490dc;
