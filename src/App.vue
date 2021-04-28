@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div id="app" class="container">
 		<div class="card">
 			<Header title="Apper" />
 			<Apps :apps="apps" />
