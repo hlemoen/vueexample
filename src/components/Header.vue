@@ -14,7 +14,7 @@ export default {
 </script>
  <style scoped>
 
- .card-header {
+.card-header {
 	padding: 0.75rem 1.25rem;
 	margin-bottom: 0;
 	color: whitesmoke;
