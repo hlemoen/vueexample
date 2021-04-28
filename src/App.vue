@@ -4,8 +4,8 @@
 			<!-- Username display -->
 			<span
 				v-if="!inline"
-				class="user-status-menu-item__header"
-				:title="'hello! Mr.Lemoen'">
+				class="user-status-menu-item__header">
+				Heisann!
 			</span>
 
 			<!-- Status modal toggle -->
@@ -14,7 +14,8 @@
 				class="user-status-menu-item__toggle"
 				href="#"
 				@click.prevent.stop="openModal">
-				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
+				<span class="user-status-menu-item__toggle-icon" />
+				Vueexample
 			</toggle>
 		</div>
 
