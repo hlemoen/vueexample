@@ -1,23 +1,61 @@
 <template>
-	<div id="app" class="container">
-		<div class="card">
-			<Header title="Apper" />
-			<Apps :apps="apps" />
-			<Footer footer="laget av Henrik" />
+	<li>
+		<div class="user-status-menu-item">
+			<!-- Username display -->
+			<span
+				v-if="!inline"
+				class="user-status-menu-item__header"
+				:title="'hello! Mr.Lemoen'">
+			</span>
+
+			<!-- Status modal toggle -->
+			<toggle :is="inline ? 'button' : 'a'"
+				:class="{'user-status-menu-item__toggle--inline': inline}"
+				class="user-status-menu-item__toggle"
+				href="#"
+				@click.prevent.stop="openModal">
+				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
+			</toggle>
 		</div>
-	</div>
+
+		<!-- Status management modal -->
+		<SetStatusModal
+			v-if="isModalOpen"
+			@close="closeModal" />
+	</li>
 </template>
 
 <script>
-import Header from './components/Header'
-import Apps from './components/Apps'
-import Footer from './components/Footer'
+
 export default {
 	name: 'App',
 	components: {
-		Header,
-		Apps,
-		Footer,
+		Modalview: () => import(/* webpackChunkName: 'user-status-modal' */'./components/Modalview'),
+	},
+	props: {
+		inline: {
+			type: Boolean,
+			default: false,
+		},
+	},
+	data() {
+		return {
+			isModalOpen: false,
+		}
+	},
+	methods: {
+		/**
+		 * Opens the modal to set a custom status
+		 */
+		openModal() {
+			this.isModalOpen = true
+		},
+		/**
+		 * Closes the modal
+		 */
+		closeModal() {
+			this.isModalOpen = false
+		},
 	},
 	created() {
 		this.apps = [
