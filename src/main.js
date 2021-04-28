@@ -27,7 +27,15 @@ import App from './App'
 Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
 
+// export default new Vue({
+// 	el: '#content',
+// 	render: h => h(App),
+// })
+// Register settings menu entry
 export default new Vue({
-	el: '#content',
-	render: h => h(App),
+	el: 'li[data-id="user_status-menuitem"]',
+	// eslint-disable-next-line vue/match-component-file-name
+	name: 'VueexampleRoot',
+	render: h => h(UserStatus),
+	store,
 })

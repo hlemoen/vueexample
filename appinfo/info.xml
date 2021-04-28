@@ -17,8 +17,11 @@
 	</dependencies>
 	<navigations>
 		<navigation>
+			<id>vueexample-menuitem</id>
 			<name>VueExample</name>
-			<route>vueexample.page.index</route>
+			<route />
+			<order>1</order>
+			<type>settings</type>
 		</navigation>
 	</navigations>
 </info>
