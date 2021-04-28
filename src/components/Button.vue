@@ -21,13 +21,13 @@ export default {
 
 <style scoped>
 /* .Btn {
-    color: whitesmoke;W
-    border: 1px;
-    border-radius: 5px;
-    border-color: white;
-    text-align: center;
-    margin: 1rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+	color: whitesmoke;W
+	border: 1px;
+	border-radius: 5px;
+	border-color: white;
+	text-align: center;
+	margin: 1rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
 } */
 
 .btn {
