@@ -6,12 +6,10 @@
 
 <script>
 export default {
-	name: "Footer",
+	name: 'Footer',
 	props: {
-		footer: String
+		footer: String,
 	},
-	components: {}
 };
 </script>
 
-<style scoped></style>
