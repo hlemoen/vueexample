@@ -28,8 +28,8 @@ Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
 
 // export default new Vue({
-// 	el: '#content',
-// 	render: h => h(App),
+// el: '#content',
+// render: h => h(App),
 // })
 // Register settings menu entry
 export default new Vue({

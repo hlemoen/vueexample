@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -109,5 +109,58 @@ export default {
 	color: whitesmoke;
 	background-color: #2e74c8;
 	border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+$max-width-user-status: 200px;
+
+.user-status-menu-item {
+	&__header {
+		display: block;
+		overflow: hidden;
+		box-sizing: border-box;
+		max-width: $max-width-user-status;
+		padding: 10px 12px 5px 38px;
+		text-align: left;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		opacity: 1;
+		color: var(--color-text-maxcontrast);
+	}
+
+	&__toggle {
+		&-icon {
+			width: 16px;
+			height: 16px;
+			margin-right: 10px;
+			opacity: 1 !important;
+			background-size: 16px;
+		}
+
+		// In dashboard
+		&--inline {
+			width: auto;
+			min-width: 44px;
+			height: 44px;
+			margin: 0;
+			border: 0;
+			border-radius: var(--border-radius-pill);
+			background-color: var(--color-background-translucent);
+			font-size: inherit;
+			font-weight: normal;
+
+			-webkit-backdrop-filter: var(--background-blur);
+			backdrop-filter: var(--background-blur);
+
+			&:active,
+			&:hover,
+			&:focus {
+				background-color: var(--color-background-hover);
+			}
+		}
+	}
+}
+
+li {
+	list-style-type: none;
 }
 </style>

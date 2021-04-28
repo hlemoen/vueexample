@@ -18,3 +18,15 @@ export default {
 	},
 }
 </script>
+
+<style scoped>
+
+.card-body {
+	justify-content: center;
+	flex: auto;
+	display: flex;
+	flex-flow: row wrap;
+	border-color: #2e74c8;
+	/* padding: 1.25rem; */
+}
+</style>
