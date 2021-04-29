@@ -33,7 +33,7 @@ Vue.prototype.n = translatePlural
 // })
 // Register settings menu entry
 export default new Vue({
-	el: 'li[data-id="user_status-menuitem"]',
+	el: 'li[data-id="vueexample-menuitem"]',
 	// eslint-disable-next-line vue/match-component-file-name
 	name: 'AppRoot',
 	render: h => h(App),
