@@ -20,12 +20,12 @@
 </template>
 
 <script>
-import Modal from './components/Modalview'
+import Modalview from './components/Modalview'
 export default {
 	name: 'App',
 
 	components: {
-		Modal,
+		Modalview,
 		// Modalview: () => import(/* webpackChunkName: 'user-status-modal' */'./components/Modalview'),
 	},
 	props: {
