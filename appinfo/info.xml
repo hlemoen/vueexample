@@ -15,10 +15,19 @@
 	<dependencies>
 		<nextcloud min-version="16" max-version="25"/>
 	</dependencies>
-	<navigations>
+	<!-- <navigations>
 		<navigation>
 			<name>VueExample</name>
 			<route>vueexample.page.index</route>
+		</navigation>
+	</navigations> -->
+		<navigations>
+		<navigation>
+			<id>vueexample-menuitem</id>
+			<name>VueExample</name>
+			<route />
+			<order>2</order>
+			<type>settings</type>
 		</navigation>
 	</navigations>
 </info>
