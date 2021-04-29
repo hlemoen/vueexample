@@ -2,10 +2,15 @@
 	<li>
 		<div class="user-status-menu-item">
 			<!-- Status modal toggle -->
-			<a class="user-status-menu-item__toggle" href="#" @click.prevent.stop="openModal"></a>
-			<span :class="statusIcon" class="user-status-menu-item__toggle-icon">
-				Vueexample
-			</span>
+			<toggle :is="inline ? 'button' : 'a'"
+				:class="{'user-status-menu-item__toggle--inline': inline}"
+				class="user-status-menu-item__toggle"
+				href="#"
+				@click.prevent.stop="openModal">
+				<span class="user-status-menu-item__toggle-icon">
+					Vueexample
+				</span>
+			</toggle>
 		</div>
 
 		<!-- Status management modal -->
