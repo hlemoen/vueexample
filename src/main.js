@@ -35,5 +35,7 @@ Vue.prototype.$t = t
 // Register settings menu entry
 export default new Vue({
 	el: 'li[data-id="vueexample-menuitem"]',
+	name: 'AppRoot',
 	render: h => h(App),
+	store,
 })
