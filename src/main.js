@@ -27,13 +27,7 @@ import App from './App'
 Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
 
-// export default new Vue({
-// el: '#vue-content',
-// render: h => h(App),
-// })
 export default new Vue({
-	el: 'li[data-id="vueexample-menuitem"]',
-	// eslint-disable-next-line vue/match-component-file-name
-	name: 'AppRoot',
+	el: '#vue-content',
 	render: h => h(App),
 })
