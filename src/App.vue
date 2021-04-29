@@ -1,14 +1,6 @@
 <template>
 	<li>
 		<div class="user-status-menu-item">
-			<!-- Username display -->
-			<span
-				v-if="!inline"
-				class="user-status-menu-item__header"
-				:title="'hello! Mr.Lemoen'">
-				{{ displayName }}
-			</span>
-
 			<!-- Status modal toggle -->
 			<toggle :is="inline ? 'button' : 'a'"
 				:class="{'user-status-menu-item__toggle--inline': inline}"
@@ -45,16 +37,6 @@ export default {
 		return {
 			isModalOpen: false,
 		}
-	},
-	computed: {
-		/**
-		 * The display-name of the current user
-		 *
-		 * @returns {String}
-		 */
-		displayName() {
-			return 'Henrik'
-		},
 	},
 	methods: {
 		/**
