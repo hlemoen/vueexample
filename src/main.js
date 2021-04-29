@@ -22,7 +22,6 @@
 import Vue from 'vue'
 import { translate, translatePlural } from '@nextcloud/l10n'
 import App from './App'
-import store from './store'
 
 Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
@@ -39,5 +38,4 @@ export default new Vue({
 	// eslint-disable-next-line vue/match-component-file-name
 	name: 'AppRoot',
 	render: h => h(App),
-	store,
 })
