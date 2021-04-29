@@ -8,7 +8,7 @@
 				class="user-status-menu-item__toggle"
 				href="#"
 				@click.prevent.stop="openModal">
-				<span :class="statusIcon" class="user-status-menu-item__toggle-icon"/>
+				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
 			</toggle>
 		</div>
 
