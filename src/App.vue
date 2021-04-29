@@ -44,7 +44,7 @@ export default {
 		 */
 		openModal() {
 			this.isModalOpen = true
-			// eslint-disable-next-line vue/no-console
+			// eslint-disable-next-line no-console
 			console.log('true')
 		},
 		/**
@@ -52,7 +52,7 @@ export default {
 		 */
 		closeModal() {
 			this.isModalOpen = false
-			// eslint-disable-next-line vue/no-console
+			// eslint-disable-next-line no-console
 			console.log(false)
 		},
 	},
