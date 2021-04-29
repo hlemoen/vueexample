@@ -88,10 +88,11 @@ export default {
 }
 
 .container {
-	width: 50%;
+	width: 75%;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-top: 5rem;
+	margin-bottom: 5rem;
 	margin-right: auto;
 	margin-left: auto;
 }

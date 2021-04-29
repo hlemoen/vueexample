@@ -26,7 +26,6 @@ export default {
 
 	components: {
 		Modalview,
-		// Modalview: () => import(/* webpackChunkName: 'user-status-modal' */'./components/Modalview'),
 	},
 	props: {
 		inline: {
