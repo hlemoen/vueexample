@@ -46,7 +46,7 @@ export default {
 			isModalOpen: false,
 		}
 	},
-		computed: {
+	computed: {
 		/**
 		 * The display-name of the current user
 		 *
