@@ -20,7 +20,7 @@
 		<navigation>
 			<id>vueexample-menuitem</id>
 			<name>VueExample</name>
-			<route />
+			<route>#</route>
 			<order>2</order>
 			<type>settings</type>
 		</navigation>
