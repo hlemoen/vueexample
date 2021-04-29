@@ -44,12 +44,14 @@ export default {
 		 */
 		openModal() {
 			this.isModalOpen = true
+			console.log('true')
 		},
 		/**
 		 * Closes the modal
 		 */
 		closeModal() {
 			this.isModalOpen = false
+			console.log(false)
 		},
 	},
 }
