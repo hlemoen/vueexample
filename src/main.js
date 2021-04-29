@@ -28,8 +28,8 @@ Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
 
 // export default new Vue({
-// 	el: '#vue-content',
-// 	render: h => h(App),
+// el: '#vue-content',
+// render: h => h(App),
 // })
 export default new Vue({
 	el: 'li[data-id="vueexample-menuitem"]',
