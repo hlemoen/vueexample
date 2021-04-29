@@ -7,7 +7,7 @@
 				class="user-status-menu-item__toggle"
 				href="#"
 				@click.prevent.stop="openModal()">
-				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
+				<span class="user-status-menu-item__toggle-icon" />
 				{{ 'Apper' }}
 			</toggle>
 		</div>
@@ -20,12 +20,13 @@
 </template>
 
 <script>
-
+import Modal from './components/Modalview'
 export default {
 	name: 'App',
 
 	components: {
-		Modalview: () => import(/* webpackChunkName: 'user-status-modal' */'./components/Modalview'),
+		Modal,
+		// Modalview: () => import(/* webpackChunkName: 'user-status-modal' */'./components/Modalview'),
 	},
 	props: {
 		inline: {
