@@ -1,14 +1,15 @@
 <template>
 	<li>
-		<div class="user-status-menu-item">
+		<div class="vueexample-menu-item">
 			<!-- Status modal toggle -->
 			<toggle :is="inline ? 'button' : 'a'"
 				:class="{'user-status-menu-item__toggle--inline': inline}"
 				class="user-status-menu-item__toggle"
 				href="#"
 				@click.prevent.stop="openModal">
-				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
-				{{ visibleMessage }}
+				<span :class="statusIcon" class="user-status-menu-item__toggle-icon">
+					abra
+				</span>
 			</toggle>
 		</div>
 
