@@ -35,6 +35,6 @@ Vue.prototype.n = translatePlural
 export default new Vue({
 	el: 'li[data-id="user_status-menuitem"]',
 	// eslint-disable-next-line vue/match-component-file-name
-	name: 'VueexampleRoot',
+	name: 'UserStatusRoot',
 	render: h => h(App),
 })
