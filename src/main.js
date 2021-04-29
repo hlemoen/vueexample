@@ -28,6 +28,6 @@ Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
 
 export default new Vue({
-	el: '#content',
+	el: '#vue-content',
 	render: h => h(App),
 })
