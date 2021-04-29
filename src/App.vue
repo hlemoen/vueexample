@@ -36,7 +36,7 @@ export default {
 	},
 	data() {
 		return {
-			isModalOpen: false,
+			isModalOpen: true,
 		}
 	},
 	methods: {
