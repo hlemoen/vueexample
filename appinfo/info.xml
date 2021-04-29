@@ -11,7 +11,7 @@
 	<author mail="skjnldsv@protonmail.com">John Molakvoæ</author>
 	<namespace>Vueexample</namespace>
 	<default_enable/>
-	<category>tools</category>
+	<category>social</category>
 	<bugs>https://github.com</bugs>
 	<dependencies>
 		<nextcloud min-version="16" max-version="25"/>
