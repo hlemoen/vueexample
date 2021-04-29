@@ -8,7 +8,7 @@
 				href="#"
 				@click.prevent.stop="openModal">
 				<span :class="statusIcon" class="user-status-menu-item__toggle-icon">
-				Apper
+					Apper
 				</span>
 			</toggle>
 		</div>
