@@ -1,15 +1,22 @@
 <template>
 	<li>
 		<div class="user-status-menu-item">
+			<!-- Username display -->
+			<span
+				v-if="!inline"
+				class="user-status-menu-item__header"
+				:title="'hello! Mr.Lemoen'">
+				{{ 'tester' }}
+			</span>
+
 			<!-- Status modal toggle -->
 			<toggle :is="inline ? 'button' : 'a'"
 				:class="{'user-status-menu-item__toggle--inline': inline}"
 				class="user-status-menu-item__toggle"
 				href="#"
 				@click.prevent.stop="openModal">
-				<span class="user-status-menu-item__toggle-icon">
-					Vueexample
-				</span>
+				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
+				{{ 'vuexample' }}
 			</toggle>
 		</div>
 
