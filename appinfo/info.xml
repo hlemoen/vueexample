@@ -17,7 +17,7 @@
 	</dependencies>
 	<navigations>
 		<navigation>
-			<id>vueexample-menuitem</id>
+			<id>user_status-menuitem</id>
 			<name>VueExample</name>
 			<route />
 			<order>1</order>
