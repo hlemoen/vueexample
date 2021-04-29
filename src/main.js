@@ -21,13 +21,14 @@
  */
 import Vue from 'vue'
 import { translate, translatePlural } from '@nextcloud/l10n'
-
+import { getRequestToken } from '@nextcloud/auth'
 import App from './App'
 
 Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
 Vue.prototype.t = t
 Vue.prototype.$t = t
+__webpack_nonce__ = btoa(getRequestToken())
 
 // export default new Vue({
 // el: '#content',
