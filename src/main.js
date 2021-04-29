@@ -37,6 +37,5 @@ Vue.prototype.$t = t
 export default new Vue({
 	el: 'li[data-id="vueexample-menuitem"]',
 	// eslint-disable-next-line vue/match-component-file-name
-	name: 'AppRoot',
 	render: h => h(App),
 })
