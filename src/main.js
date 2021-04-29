@@ -24,8 +24,9 @@ import { translate, translatePlural } from '@nextcloud/l10n'
 
 import App from './App'
 
-Vue.prototype.t = t
+Vue.prototype.t = translate
 Vue.prototype.n = translatePlural
+Vue.prototype.t = t
 Vue.prototype.$t = t
 
 // export default new Vue({
