@@ -1,15 +1,22 @@
 <template>
 	<li>
-		<div class="vueexample-menu-item">
+		<div class="user-status-menu-item">
+			<!-- Username display -->
+			<span
+				v-if="!inline"
+				class="user-status-menu-item__header"
+				:title="'hello! Mr.Lemoen'">
+				{{ displayName }}
+			</span>
+
 			<!-- Status modal toggle -->
 			<toggle :is="inline ? 'button' : 'a'"
 				:class="{'user-status-menu-item__toggle--inline': inline}"
 				class="user-status-menu-item__toggle"
 				href="#"
 				@click.prevent.stop="openModal">
-				<span :class="statusIcon" class="user-status-menu-item__toggle-icon">
-					abra
-				</span>
+				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
+				{{ visibleMessage }}
 			</toggle>
 		</div>
 
@@ -36,8 +43,18 @@ export default {
 	},
 	data() {
 		return {
-			isModalOpen: true,
+			isModalOpen: false,
 		}
+	},
+		computed: {
+		/**
+		 * The display-name of the current user
+		 *
+		 * @returns {String}
+		 */
+		displayName() {
+			return 'Henrik'
+		},
 	},
 	methods: {
 		/**
