@@ -6,7 +6,7 @@
 				:class="{'user-status-menu-item__toggle--inline': inline}"
 				class="user-status-menu-item__toggle"
 				href="#"
-				@click.prevent.stop="openModal">
+				@click.prevent.stop="openModal()">
 				<span :class="statusIcon" class="user-status-menu-item__toggle-icon" />
 				{{ 'Apper' }}
 			</toggle>
